@@ -1,0 +1,30 @@
+.footer-basic {
+    padding:25px 0;
+    background-color:rgb(176, 109, 238);
+    color:#4b4c4d;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+  }
+  
+  .footer-basic .social > a {
+    font-size:40px;
+    width:60px;
+    height:60px;
+    line-height:65px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid rgb(87, 80, 80);
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+    vertical-align: ;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  
