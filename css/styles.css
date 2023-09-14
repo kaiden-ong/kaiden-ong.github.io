@@ -1,15 +1,19 @@
 /* general */
-html, body {
-  height: 100vh;
-  padding: 0;
+.bodypg {
+  height: 100%;
+  min-height: 100vh;
+  background-color: #f1f1f1;
+  background-size: cover;
 }
+
 
 /* navbar */
 nav {
   font-size: 1.5rem;
   font-weight:600;
   border-bottom: 3px solid;
-  border-color: rgba(0, 0, 0, 0.15);
+  background-color: white;
+  border-color: #c0c0c0;
   border-width: .5rem;
 }
 
@@ -30,11 +34,11 @@ nav {
   width: auto;
 }
 
-/* main content */
-main {
-  background-color: rgba(0, 0, 0, 0.05);
+/* index page main */
+.indexmain {
+  background-color: #f1f1f1;
   overflow: hidden;
-  padding: 5% 20% 5% 15%;
+  padding: 5% 20% 4% 15%;
 }
 
 .photo-desc {
@@ -42,6 +46,7 @@ main {
 }
 
 .hello-world {
+  font-weight: 400;
   font-size: 4rem;
   color: #B7921B;
 }
@@ -54,9 +59,9 @@ main {
 
 /* footer */
 .footer-basic {
-  padding: 0 0 70px 0;
+  padding: 0 0 40px 0;
   color:#8f8f8f;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #f1f1f1;
 }
 
 .connect {
@@ -85,4 +90,58 @@ main {
   opacity:0.9;
   color: #07689F;
   border-color: #07689F;
+}
+
+.proj-heading {
+  text-align: center;
+  margin-top: 3rem;
+  font-weight: 400;
+  font-size: 4rem;
+  color: #B7921B;
+}
+
+.card img {
+  border-radius: 15px;
+}
+
+.card {
+  background-color: rgba(0,0,0,0) !important;
+  border: none !important;
+  padding: .5rem;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s, transform 0.3s;
+}
+
+.imgtext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  text-align: center;
+  color: white;
+}
+
+.card:hover .card-img-top {
+  filter: grayscale(100%) blur(5px);
+  transform: scale(1.05);
+}
+
+.card:hover .imgtext {
+  opacity: 1;
 }
