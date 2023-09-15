@@ -64,7 +64,7 @@ nav {
 }
 
 .footer-basic .social > a:hover {
-  opacity:0.9;
+  opacity: 1;
   color: #07689F;
   border-color: #07689F;
 }
@@ -448,11 +448,49 @@ nav {
   100% { width : 124px ; }
 }
 
-.container{
+.resume {
   width : 100% ;
   height : auto;
   display : flex ;
   flex-direction : column ;
   justify-content : center ;
   align-items : center ;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border-radius: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3.33333rem;
+}
+
+.form-input {
+  border: 0;
+  outline: none;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #a8b1b3;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: .00833rem;
+  line-height: 1.66667rem;
+  transition: all .2s linear;
+  width: 86%;
+  resize: none;
+}
+
+.form-input:focus {
+  border-bottom: 1px solid #000000;
+}
+
+#myForm {
+  color: #000000;
 }
