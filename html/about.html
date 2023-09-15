@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Kaiden Ong</title>
         <link rel="stylesheet" href="../css/styles.css">
+        <script src="../js/app.js"></script>
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -57,16 +58,56 @@
                 </div>
                 <div>
                     <h2>Passion for Learning</h2>
+                    <div class="tab-outer">
+                        <div class="tab-body">
+                            <div class="popup">
+                                <div class="tabs">
+                                      <input class="learning-input" type="radio" id="tab1" name="tab" checked="true">        
+                                    <label class="learning-tab" for="tab1">FIRST TAB</label>
+                                      <input class="learning-input" type="radio" id="tab2" name="tab">
+                                    <label class="learning-tab" for="tab2">SECOND TAB</label>
+                                      <input class="learning-input" type="radio" id="tab3" name="tab">
+                                    <label class="learning-tab" for="tab3">THIRD TAB</label>
+                                      <input class="learning-input" type="radio" id="tab4" name="tab">
+                                    <label class="learning-tab" for="tab4">FOURTH TAB</label>
+                                      <input class="learning-input" type="radio" id="tab5" name="tab">
+                                    <label class="learning-tab" for="tab5">FIFTH TAB</label>
+                                      <input class="learning-input" type="radio" id="tab6" name="tab">
+                                    <label class="learning-tab" for="tab6">SIXTH TAB</label>
+                                    <div class="marker">
+                                       <div id="top"></div>
+                                       <div id="bottom"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <h2>Things I Enjoy</h2>
                     <div class="gallery-outer">
                         <div class="gallery pt-3">
-                            <img src="../img/enjoy1.jpg" alt="a hot air balloon">
-                            <img src="../img/enjoy2.jpg" alt="a sky photo of an old city">
+                            <img src="../img/enjoy1.jpg" alt="Me and Maradona (Cardboard Figure)">
+                            <img src="../img/enjoy2.jpg" alt="Port Priority 7 Smash Bros Tournament">
                             <img src="../img/enjoy3.jpg" alt="a small boat">
                             <img src="../img/enjoy4.jpg" alt="a forest">
                         </div>
+                    </div>
+                    <div>
+                        <h1>Sports</h1>
+                        <p>From watching to playing and competing, I love the thrill of sports. I've probably played almost all of them, but if not I'm always down to learn something new!</p>
+                    </div>
+                    <div>
+                        <h1>Games</h1>
+                        <p>My competitive spirit leaks into gaming as well. I love PvP games, especially if they have a ranked system. My top games right now are Valorant, Smash Ultimate, and Pokemon Go!</p>
+                    </div>
+                    <div>
+                        <h1>Travel & The Outdoors</h1>
+                        <p>I love the feeling of exploring nature and seeing amazing views. I took this picture during the summer of '23. It's the German castle (Neuschwanstein) that is Disney logo is based off of.</p>
+                    </div>
+                    <div>
+                        <h1>Animals</h1>
+                        <p>Here are my family's two cats, Ebey & Macgyver! We also have 3 chickens and an angora rabbit. We practically have a farm at our suburban house, but we love it!</p>
                     </div>
                 </div>
             </div>
@@ -78,7 +119,47 @@
                     <!-- <a href="#"><ion-icon name="logo-facebook"></ion-icon></a> -->
                     <a href="https://www.linkedin.com/in/kaiden-ong/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
                     <a href="https://github.com/kaiden-ong" target="_blank"><ion-icon name="logo-github"></a>
-                    <a href="#"><ion-icon name="ios-mail"></a>
+                    <a href="Javascript:void(0);" onclick="openForm()"><ion-icon name="ios-mail"></a>
+                </div>
+                <div class="form-bg" style="display: none;">
+                    
+                </div>
+                <div class="form-popup p-5" id="myForm">
+                    <form class="form-container" action="https://getform.io/f/2fbc8979-8bb8-4f6d-a01c-f6e74c72a149" method="POST" autocomplete="off">
+                        <div class="d-flex flex-row flex-wrap justify-content-between">
+                            <div class="col-10">
+                                <h1 class="pb-3">Message Me!</h1>
+                            </div>
+                            <div class="col-1">
+                                <button type="button" class="btn cancel" onclick="closeForm()"><img src="../img/close.png"></button>
+                            </div>
+                            <div class="col-4 pe-4">
+                                <div class="form-group">
+                                    <label for="email"><b>First Name</b></label>
+                                    <input class="form-input" type="text" name="first-name" required>
+                                </div>
+                            </div>
+                            <div class="col-4 px-2">
+                                <div class="form-group">
+                                    <label for="email"><b>Last Name</b></label>
+                                    <input class="form-input" type="text" name="last-name">
+                                </div>
+                            </div>
+                            <div class="col-4 ps-4">
+                                <div class="form-group">
+                                    <label for="email"><b>Email</b></label>
+                                    <input class="form-input" type="text" name="email" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="email"><b>Message</b></label>
+                                    <textarea class="form-input text-input" name="message" cols="100" rows="1" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn send-btn">Send</button>
+                    </form>
                 </div>
             </footer>
         </div>
