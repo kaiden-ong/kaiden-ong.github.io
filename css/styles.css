@@ -2,8 +2,31 @@
 .bodypg {
   height: 100%;
   min-height: 100vh;
-  background-color: #f1f1f1;
+  background-color: #e6e6e6;
   background-size: cover;
+}
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 
@@ -13,8 +36,8 @@ nav {
   font-weight:600;
   border-bottom: 3px solid;
   background-color: white;
-  border-color: #c0c0c0;
-  border-width: .5rem;
+  border-color: #616161;
+  border-width: .15rem;
 }
 
 .navbar-nav > li{
@@ -24,7 +47,7 @@ nav {
 
 .navbar {
   --bs-navbar-hover-color: #000000 !important;
-  --bs-navbar-active-color: #B7921B !important;
+  --bs-navbar-active-color: #d49c04 !important;
 }
 
 /* logo */
@@ -38,7 +61,6 @@ nav {
 .footer-basic {
   padding: 0 0 40px 0;
   color:#8f8f8f;
-  background-color: #f1f1f1;
 }
 
 .connect {
@@ -71,9 +93,8 @@ nav {
 
 /* index page main */
 .indexmain {
-  background-color: #f1f1f1;
   overflow: hidden;
-  padding: 5% 20% 4% 15%;
+  padding: 5% 20% 3% 15%;
 }
 
 .photo-desc {
@@ -83,7 +104,7 @@ nav {
 .hello-world {
   font-weight: 400;
   font-size: 4rem;
-  color: #B7921B;
+  color: #d49c04;
 }
 
 .quick-desc {
@@ -98,7 +119,7 @@ nav {
   margin-top: 3rem;
   font-weight: 400;
   font-size: 4rem;
-  color: #B7921B;
+  color: #d49c04;
 }
 
 .card img {
@@ -149,6 +170,18 @@ nav {
 .imgtext a:hover {
   font-weight: bolder;
   text-decoration: underline;
+}
+
+/* individual project pages */
+.project-back a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 400;
+}
+
+.project-back a:hover {
+  font-weight: bolder;
 }
 
 /* about page */
