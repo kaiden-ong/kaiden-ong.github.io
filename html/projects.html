@@ -80,30 +80,33 @@
                     <!-- <a href="#"><ion-icon name="logo-facebook"></ion-icon></a> -->
                     <a href="https://www.linkedin.com/in/kaiden-ong/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
                     <a href="https://github.com/kaiden-ong" target="_blank"><ion-icon name="logo-github"></a>
-                    <a onclick="openForm()"><ion-icon name="ios-mail"></a>
+                    <a href="Javascript:void(0);" onclick="openForm()"><ion-icon name="ios-mail"></a>
+                </div>
+                <div class="form-bg" style="display: none;">
+                    
                 </div>
                 <div class="form-popup p-5" id="myForm">
                     <form class="form-container" action="https://getform.io/f/2fbc8979-8bb8-4f6d-a01c-f6e74c72a149" method="POST" autocomplete="off">
-                        <div class="d-flex flex-row flex-wrap">
-                            <div class="col-11">
+                        <div class="d-flex flex-row flex-wrap justify-content-between">
+                            <div class="col-10">
                                 <h1 class="pb-3">Message Me!</h1>
                             </div>
                             <div class="col-1">
                                 <button type="button" class="btn cancel" onclick="closeForm()"><img src="../img/close.png"></button>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 pe-4">
                                 <div class="form-group">
                                     <label for="email"><b>First Name</b></label>
                                     <input class="form-input" type="text" name="first-name" required>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 px-2">
                                 <div class="form-group">
                                     <label for="email"><b>Last Name</b></label>
                                     <input class="form-input" type="text" name="last-name">
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 ps-4">
                                 <div class="form-group">
                                     <label for="email"><b>Email</b></label>
                                     <input class="form-input" type="text" name="email" required>
@@ -112,11 +115,11 @@
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="email"><b>Message</b></label>
-                                    <textarea class="form-input" placeholder="Enter Your Message" name="message" cols="40" rows="4" required></textarea>
+                                    <textarea class="form-input text-input" name="message" cols="100" rows="1" required></textarea>
                                 </div>
                             </div>
                         </div>
-                        <button type="submit" class="btn">Send</button>
+                        <button type="submit" class="btn send-btn">Send</button>
                     </form>
                 </div>
             </footer>
