@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+.bodypg {
+  font-family: 'Dosis', sans-serif;
+}
+
 /* general */
 .bodypg {
   height: 100%;
@@ -66,6 +72,7 @@ nav {
 
 .connect {
   color: black;
+  font-weight: 600;
 }
 
 .footer-basic .social {
@@ -79,8 +86,8 @@ nav {
   line-height:65px;
   display:inline-block; 
   text-align:center;
-  border-radius:50%;
-  border:1px solid #575757;
+  border-radius: 20px;
+  border:2px solid #575757;
   margin:0 1rem;
   color:inherit;
   opacity:0.75;
@@ -103,7 +110,7 @@ nav {
 }
 
 .hello-world {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 4rem;
   color: #000000;
 }
@@ -138,7 +145,7 @@ nav {
   overflow: hidden;
 }
 
-.card-img-top {
+.project-card {
   transition: filter 0.3s, transform 0.3s;
 }
 
@@ -153,7 +160,7 @@ nav {
   color: white;
 }
 
-.card:hover .card-img-top {
+.card:hover .project-card {
   filter: grayscale(100%) blur(5px);
   transform: scale(1.05);
 }
@@ -265,6 +272,39 @@ nav {
 
 .about-enjoy p {
   margin-bottom: 0;
+}
+
+.card-inner {
+  height: 100%;
+  width: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-inner.is-flipped {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  background-image: linear-gradient(to bottom right, #07689F, #4a5b64);
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
 }
 
 /* resume button */
@@ -500,7 +540,7 @@ nav {
 .tabs input[name="tab-control"] {
   display: none;
 }
-.tabs .content section h2,
+.tabs .tab-info section h2,
 .tabs ul li label {
   font-weight: bold;
   font-size: 18px;
@@ -570,10 +610,10 @@ nav {
   background: #07689F;
   border-radius: 15px;
 }
-.tabs .content {
+.tabs .tab-info {
   margin-top: 30px;
 }
-.tabs .content section {
+.tabs .tab-info section {
   display: none;
   animation-name: content;
   animation-direction: normal;
@@ -582,11 +622,11 @@ nav {
   animation-iteration-count: 1;
   line-height: 1.4;
 }
-.tabs .content section h2 {
+.tabs .tab-info section h2 {
   color: #07689F;
   display: none;
 }
-.tabs .content section h2::after {
+.tabs .tab-info section h2::after {
   content: "";
   position: relative;
   display: block;
@@ -626,7 +666,7 @@ nav {
 }
 .tabs
   input[name="tab-control"]:nth-of-type(1):checked
-  ~ .content
+  ~ .tab-info
   > section:nth-child(1) {
   display: block;
 }
@@ -660,7 +700,7 @@ nav {
 }
 .tabs
   input[name="tab-control"]:nth-of-type(2):checked
-  ~ .content
+  ~ .tab-info
   > section:nth-child(2) {
   display: block;
 }
@@ -694,7 +734,7 @@ nav {
 }
 .tabs
   input[name="tab-control"]:nth-of-type(3):checked
-  ~ .content
+  ~ .tab-info
   > section:nth-child(3) {
   display: block;
 }
@@ -728,7 +768,7 @@ nav {
 }
 .tabs
   input[name="tab-control"]:nth-of-type(4):checked
-  ~ .content
+  ~ .tab-info
   > section:nth-child(4) {
   display: block;
 }
@@ -764,10 +804,10 @@ nav {
   .tabs .slider {
     display: none;
   }
-  .tabs .content {
+  .tabs .tab-info {
     margin-top: 20px;
   }
-  .tabs .content section h2 {
+  .tabs .tab-info section h2 {
     display: block;
   }
 }
@@ -788,57 +828,11 @@ nav {
   background-image: url('../img/waves-bottom1.svg');
 }
 
-/* circular image wheel */
-.gallery {
-  --g: 8px;   /* the gap */
-  --s: 600px; /* the size */
-  display: grid;
-  border-radius: 50%;
-}
-
-.gallery > img {
-  grid-area: 1/1;
-  width: 600px;
-  aspect-ratio: 1;
-  object-fit: cover;
-  border-radius: 50%;
-  transform: translate(var(--_x,0),var(--_y,0));
-  cursor: pointer;
-  z-index: 0;
-  transition: .3s, z-index 0s .3s;
-}
-.gallery img:hover {
-  --_i: 1;
-  z-index: 1;
-  transition: transform .2s, clip-path .3s .2s, z-index 0s;
-}
-.gallery:hover img {
-  transform: translate(0,0);
-}
-.gallery > img:nth-child(1) {
-  clip-path: polygon(50% 50%,calc(50%*var(--_i,0)) calc(120%*var(--_i,0)),0 calc(100%*var(--_i,0)),0 0,100% 0,100% calc(100%*var(--_i,0)),calc(100% - 50%*var(--_i,0)) calc(120%*var(--_i,0)));
-  --_y: calc(-1*var(--g))
-}
-.gallery > img:nth-child(2) {
-  clip-path: polygon(50% 50%,calc(100% - 120%*var(--_i,0)) calc(50%*var(--_i,0)),calc(100% - 100%*var(--_i,0)) 0,100% 0,100% 100%,calc(100% - 100%*var(--_i,0)) 100%,calc(100% - 120%*var(--_i,0)) calc(100% - 50%*var(--_i,0)));
-  --_x: var(--g)
-}
-.gallery > img:nth-child(3) {
-  clip-path: polygon(50% 50%,calc(100% - 50%*var(--_i,0)) calc(100% - 120%*var(--_i,0)),100% calc(100% - 120%*var(--_i,0)),100% 100%,0 100%,0 calc(100% - 100%*var(--_i,0)),calc(50%*var(--_i,0)) calc(100% - 120%*var(--_i,0)));
-  --_y: var(--g)
-}
-.gallery > img:nth-child(4) {
-  clip-path: polygon(50% 50%,calc(120%*var(--_i,0)) calc(50%*var(--_i,0)),calc(100%*var(--_i,0)) 0,0 0,0 100%,calc(100%*var(--_i,0)) 100%,calc(120%*var(--_i,0)) calc(100% - 50%*var(--_i,0)));
-  --_x: calc(-1*var(--g))
-}
-
-.gallery-outer {
-  margin: 2rem 0;
-  display: grid;
-  place-content: center;
-}
-
 /* contact form */
+.form-input::-webkit-scrollbar {
+  width: 0px;
+}
+
 .form-popup {
   display: none;
   position: fixed;
@@ -852,14 +846,18 @@ nav {
 .form-group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 3.33333rem;
+  margin-bottom: 3rem;
+}
+
+.text-area {
+  margin-bottom: 1rem;
 }
 
 .form-input {
   border: 0;
   outline: none;
   background-color: #f1f1f1;
-  border-bottom: 1px solid #a8b1b3;
+  border-bottom: 2px solid #a8b1b3;
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: .00833rem;
@@ -868,6 +866,10 @@ nav {
   width: 86%;
   resize: none;
   width: 100%;
+}
+
+.form-input:focus {
+  border-color: #07689F;
 }
 
 #myForm {
@@ -901,7 +903,6 @@ nav {
   min-height: 60px;
   min-width: 0;
   outline: none;
-  padding: 16px 24px;
   text-align: center;
   transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
   touch-action: manipulation;
@@ -914,7 +915,7 @@ nav {
 }
 
 .send-btn:hover {
-  background-color: #000000 !important;
+  background-color: #07689F !important;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }

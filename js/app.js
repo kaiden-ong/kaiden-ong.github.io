@@ -1,21 +1,42 @@
+// variables
+var textarea = document.getElementById("textarea");
+var heightLimit = 200;
+var form = document.getElementById("myForm");
+var form_bg = document.querySelector(".form-bg");
+var form_container = document.querySelector(".form-container");
+const card = document.querySelector(".card-inner");
+
 // form functions
 function openForm() {
-  document.querySelector(".form-bg").style.display = "block";
-  document.getElementById("myForm").style.display = "block";
-  disableScroll();
+  form_bg.style.display = "block";
+  form.style.display = "block";
+  // disableScroll();
 }
 
 function closeForm() {
-  document.querySelector(".form-bg").style.display = "none";
-  document.getElementById("myForm").style.display = "none";
+  form_bg.style.display = "none";
+  form.style.display = "none";
   
   resetForm();
-  enableScroll();
+  // enableScroll();
 }
 
+//reset form
 function resetForm() {
-  document.querySelector(".form-container").reset();
+  form_container.reset();
 }
+
+// resize contact form textarea
+textarea.oninput = function() {
+  textarea.style.height = "";
+  textarea.style.height = Math.min(textarea.scrollHeight, heightLimit) + "px";
+};
+
+// flip hobby cards
+card.addEventListener('click', function() {
+  console.log("Flipped");
+  card.classList.toggle('is-flipped');
+})
 
 // disable scrolling
 // var keys = {37: 1, 38: 1, 39: 1, 40: 1};
@@ -58,26 +79,3 @@ function resetForm() {
 //   window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
 // }
 
-// resize contact form textarea
-function getScrollHeight(elm){
-  var savedValue = elm.value
-  elm.value = ''
-  elm._baseScrollHeight = elm.scrollHeight
-  elm.value = savedValue
-}
-
-function onExpandableTextareaInput({ target:elm }){
-  // make sure the input event originated from a textarea and it's desired to be auto-expandable
-  if( !elm.classList.contains('autoExpand') || !elm.nodeName == 'TEXTAREA' ) return
-  
-  var minRows = elm.getAttribute('data-min-rows')|0, rows;
-  !elm._baseScrollHeight && getScrollHeight(elm)
-
-  elm.rows = minRows
-  rows = Math.ceil((elm.scrollHeight - elm._baseScrollHeight) / 16)
-  elm.rows = minRows + rows
-}
-
-
-// global delegated event listener
-document.addEventListener('input', onExpandableTextareaInput)
