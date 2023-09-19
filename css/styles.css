@@ -39,9 +39,7 @@
 /* navbar */
 nav {
   font-size: 1.5rem;
-  border-bottom: 3px solid;
   background-color: white;
-  border-color: #616161;
   border-width: .15rem;
   font-weight: 800;
 }
@@ -239,7 +237,7 @@ nav {
 
 .about-title {
   text-align: center;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 6rem;
   color: #ffffff;
 }
@@ -859,12 +857,25 @@ nav {
   background-size: cover;
 }
 
+.spacer2 {
+  aspect-ratio: 900/10;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .waves-top {
   background-image: url('../img/waves-top1.svg');
 }
 
 .waves-bottom {
   background-image: url('../img/waves-bottom1.svg');
+}
+
+.waves-nav {
+  background-image: url('../img/nav-wave.svg');
+  margin-top: -.5rem;
 }
 
 /* contact form */
