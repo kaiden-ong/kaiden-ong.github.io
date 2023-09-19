@@ -31,6 +31,26 @@ textarea.oninput = function() {
   textarea.style.height = Math.min(textarea.scrollHeight, heightLimit) + "px";
 };
 
+// scroll to top button
+let mybutton = document.getElementById("scrollBtn");
+window.onscroll = function() {scrollFunction()};
+let aboutPhotoHeight = document.getElementById('about-photo').offsetHeight;
+let navbarHeight = document.getElementById("navigation-bar").offsetHeight;
+let startScroll = aboutPhotoHeight + navbarHeight;
+
+function scrollFunction() {
+  if (document.body.scrollTop > startScroll || document.documentElement.scrollTop > startScroll) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
 // disable scrolling
 // var keys = {37: 1, 38: 1, 39: 1, 40: 1};
 

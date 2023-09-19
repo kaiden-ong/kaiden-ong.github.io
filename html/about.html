@@ -11,7 +11,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     </head>
     <body class="bodypg">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navigation-bar">
             <div class="container-fluid">
                 <div class="image-container">
                     <a class="navbar-brand" href="../index.html"><img src="../img/initials5.png" alt="My Initials Logo"></a>
@@ -35,8 +35,11 @@
             </div>
         </nav>
         <main>
+            <button onclick="topFunction()" id="scrollBtn" title="Go to top" class="btn fw-bold">
+                <span>&#8593</span> Top
+            </button>
             <div>
-                <div class="about-head">
+                <div class="about-head" id="about-photo">
                     <div class="about-content">
                         <div>
                             <h1 class="about-title">Kaiden Ong</h1>
@@ -162,7 +165,7 @@
                 <h1 class="text-center pb-3 connect">Connect With Me!</h1>
                 <div class="social">
                     <!-- <a href="#"><ion-icon name="logo-facebook"></ion-icon></a> -->
-                    <a href="https://www.linkedin.com/in/kaiden-ong/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/kaiden-ong/" target="_blank"><ion-icon name="logo-linkedin" class="linkedin"></ion-icon></a>
                     <a href="https://github.com/kaiden-ong" target="_blank"><ion-icon name="logo-github"></a>
                     <a href="Javascript:void(0);" onclick="openForm()"><ion-icon name="mail-outline"></a>
                 </div>
