@@ -4,6 +4,7 @@ var heightLimit = 200;
 var form = document.getElementById("myForm");
 var form_bg = document.querySelector(".form-bg");
 var form_container = document.querySelector(".form-container");
+const hiddenElements = document.querySelectorAll('.hidden');
 
 // form functions
 function openForm() {
@@ -50,6 +51,18 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+hiddenElements.forEach((el) => observer.observe(el));
 
 // disable scrolling
 // var keys = {37: 1, 38: 1, 39: 1, 40: 1};
