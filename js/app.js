@@ -4,7 +4,6 @@ var heightLimit = 200;
 var form = document.getElementById("myForm");
 var form_bg = document.querySelector(".form-bg");
 var form_container = document.querySelector(".form-container");
-const card = document.querySelector(".card-inner");
 
 // form functions
 function openForm() {
@@ -31,12 +30,6 @@ textarea.oninput = function() {
   textarea.style.height = "";
   textarea.style.height = Math.min(textarea.scrollHeight, heightLimit) + "px";
 };
-
-// flip hobby cards
-card.addEventListener('click', function() {
-  console.log("Flipped");
-  card.classList.toggle('is-flipped');
-})
 
 // disable scrolling
 // var keys = {37: 1, 38: 1, 39: 1, 40: 1};

@@ -263,6 +263,7 @@ nav {
 
 .about-enjoy {
   background-color: #bad4e4;
+  margin: 0 2rem 0 2rem;
 }
 
 .about-enjoy h2 {
@@ -274,17 +275,24 @@ nav {
   margin-bottom: 0;
 }
 
+.hobby-card {
+  height: 19rem;
+  width: 20rem;
+  perspective: 800px;
+  padding: 0 1rem 0 1rem;
+}
+
 .card-inner {
   height: 100%;
   width: 100%;
-  transition: transform 1s;
+  transition: transform 800ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
 }
 
-.card-inner.is-flipped {
-  transform: perspective(600px) rotateY(180deg);
+.hobby-card:hover .card-inner {
+  transform: rotateY(180deg);
 }
 
 .card-face {
@@ -294,12 +302,18 @@ nav {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow: hidden;
+}
+
+.hobby-img {
+  width: 100%;
+  height: 100%;
   border-radius: 15px;
 }
 
 .card-back {
   transform: rotateY(180deg);
   background-image: linear-gradient(to bottom right, #07689F, #4a5b64);
+  border-radius: 15px;
 }
 
 .card-content {
