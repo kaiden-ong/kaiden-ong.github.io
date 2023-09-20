@@ -43,29 +43,49 @@
   transition-delay: 600ms;
 }
 
+.line-across {
+  overflow: hidden;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.line-across > span{
+ position: relative;
+ display: inline-block;
+}
+.line-across > span:before, .line-across > span:after{
+ content: '';
+ position: absolute;
+ top: 50%;
+ border-bottom: 4px solid;
+ width: 100vw;
+ margin: 0 20px;
+}
+.line-across > span:before{
+ right: 110%;
+}
+.line-across > span:after{
+ left: 110%;
+}
+
 /* scroll bar */
-/* width */
 ::-webkit-scrollbar {
   width: 10px;
   background-color: transparent;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: rgba(0,0,0,0);
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 10px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
 
 /* navbar */
 nav {
@@ -392,10 +412,10 @@ nav {
   width : 440px;
   height : 56px;
   text-decoration : none;
-  font-size : 14px; 
-  font-weight : bold;
+  font-size : 18px; 
+  font-weight : 800;
   color : var(--line_color);
-  letter-spacing : 2px;
+  letter-spacing : 1px;
   transition : all .3s ease;
 }
 .button__text{
@@ -1007,6 +1027,10 @@ nav {
 }
 
 /* PupSupport Project Page */
+.pupsupport-main p {
+  font-size: x-large;
+}
+
 .pup-head {
   display: flex;
   justify-content: center;
