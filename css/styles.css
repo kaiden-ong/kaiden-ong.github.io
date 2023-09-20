@@ -386,7 +386,7 @@ nav {
   --back_color : #76a576;
 }
 
-.resume-button{
+.scribble-btn{
   position : relative;
   z-index : 0;
   width : 440px;
@@ -405,8 +405,8 @@ nav {
   width : 100%;
   height : 100%;
 }
-.resume-button::before,
-.resume-button::after,
+.scribble-btn::before,
+.scribble-btn::after,
 .button__text::before,
 .button__text::after{
   content : '';
@@ -416,12 +416,12 @@ nav {
   background : var(--line_color);
   transition : all .5s ease;
 }
-.resume-button::before{
+.scribble-btn::before{
   top : 0;
   left : 54px;
   width : calc( 100% - 56px * 2 - 16px );
 }
-.resume-button::after{
+.scribble-btn::after{
   top : 0;
   right : 54px;
   width : 8px;
@@ -461,15 +461,15 @@ nav {
 .button__line:nth-child(2)::before{
   right : 0;
 }
-.resume-button:hover{
+.scribble-btn:hover{
   letter-spacing : 6px;
 }
-.resume-button:hover::before,
-.resume-button:hover .button__text::before{
+.scribble-btn:hover::before,
+.scribble-btn:hover .button__text::before{
   width : 8px;
 }
-.resume-button:hover::after,
-.resume-button:hover .button__text::after{
+.scribble-btn:hover::after,
+.scribble-btn:hover .button__text::after{
   width : calc( 100% - 56px * 2 - 16px );
 }
 .button__drow1,
@@ -544,27 +544,27 @@ nav {
 .button__drow2::after{
   background : var( --back_color );
 }
-.resume-button:hover .button__drow1{
+.scribble-btn:hover .button__drow1{
   animation : drow1 ease-in .06s;
   animation-fill-mode : forwards;
 }
-.resume-button:hover .button__drow1::before{
+.scribble-btn:hover .button__drow1::before{
   animation : drow2 linear .08s .06s;
   animation-fill-mode : forwards;
 }
-.resume-button:hover .button__drow1::after{
+.scribble-btn:hover .button__drow1::after{
   animation : drow3 linear .03s .14s;
   animation-fill-mode : forwards;
 }
-.resume-button:hover .button__drow2{
+.scribble-btn:hover .button__drow2{
   animation : drow4 linear .06s .2s;
   animation-fill-mode : forwards;
 }
-.resume-button:hover .button__drow2::before{
+.scribble-btn:hover .button__drow2::before{
   animation : drow3 linear .03s .26s;
   animation-fill-mode : forwards;
 }
-.resume-button:hover .button__drow2::after{
+.scribble-btn:hover .button__drow2::after{
   animation : drow5 linear .06s .32s;
   animation-fill-mode : forwards;
 }
@@ -1006,3 +1006,110 @@ nav {
   transform: translateY(0);
 }
 
+/* PupSupport Project Page */
+.pup-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/mental-health2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: saturate(150%);
+  height: 70vh;
+  width: 100%;
+}
+
+.pup-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000079;
+  width: 100%;
+  height: 100%;
+}
+
+.pup-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 6rem;
+  color: #ffffff;
+}
+
+.pup-subtitle {
+  text-align: center;
+  font-weight: 400;
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.backBtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1rem;
+  padding: 12px 24px;
+  border-radius: 25px;
+  border: none;
+  background: #76a576;
+  color: white;
+  cursor: pointer;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.backBtn:hover {
+  background-color: #4f8556;
+}
+
+.timeline-container {
+  margin: 1rem 10rem;
+}
+
+.timeline-block {
+  width: 46%;
+  padding: 1rem 1rem;
+  
+  border-radius: 15px;
+}
+
+.block1 {
+  background-color: #98b9ce;
+  position: relative;
+  left: 0%;
+}
+
+.block2 {
+  background-color: #7c9fb4;
+  position: relative;
+  left: 18%;
+}
+
+.block3 {
+  background-color: #5589aa;
+  position: relative;
+  left: 36%;
+}
+
+.block4 {
+  background-color: #3678a1;
+  position: relative;
+  left: 54%;
+}
+
+.timeline-container img {
+  width: 40%;
+  height: auto;
+}
+
+.timeline-img1 {
+  position: relative;
+  right: 0;
+  top: 0;
+}
+
+.timeline-img2 {
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
