@@ -4,7 +4,7 @@ var heightLimit = 200;
 var form = document.getElementById("myForm");
 var form_bg = document.querySelector(".form-bg");
 var form_container = document.querySelector(".form-container");
-const hiddenElements = document.querySelectorAll('.hidden');
+
 
 // form functions
 function openForm() {
@@ -35,7 +35,7 @@ textarea.oninput = function() {
 // scroll to top button
 let mybutton = document.getElementById("scrollBtn");
 window.onscroll = function() {scrollFunction()};
-let aboutPhotoHeight = document.getElementById('about-photo').offsetHeight;
+let aboutPhotoHeight = document.getElementById('head-photo').offsetHeight;
 let navbarHeight = document.getElementById("navigation-bar").offsetHeight;
 let startScroll = aboutPhotoHeight + navbarHeight;
 
@@ -60,6 +60,7 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 });
+const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
 // disable scrolling

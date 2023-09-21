@@ -11,7 +11,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     </head>
     <body class="bodypg">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navigation-bar">
             <div class="container-fluid">
                 <div class="image-container">
                     <a class="navbar-brand" href="../index.html"><img src="../img/initials5.png" alt="My Initials Logo"></a>
@@ -23,25 +23,27 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
-                        </li>
+                        
                         <li class="nav-item">
                             <a class="nav-link active" href="projects.html">Projects</a>
-                        </li>
+                        
                         <li class="nav-item">
                             <a class="nav-link" href="blog.html">Blog</a>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
         </nav>
         <main class="pupsupport-main">
-            
+            <button onclick="topFunction()" id="scrollBtn" title="Go to top" class="btn fw-bold">
+                <span>&#8593</span> Top
+            </button>
             <!-- <div class="d-flex justify-content-center p-5">
                 <div>
                     <img src="../img/construction.gif" alt="Construction gif">
                 </div>
             </div> -->
-            <div class="pup-head">
+            <div class="pup-head" id="head-photo">
                 <div class="pup-content">
                     <div class="top-left">
                         <a href="projects.html"><button class="backBtn">❮ &#160; &#160;../projects/PupSupport-Coding</button></a>
@@ -53,76 +55,104 @@
                 </div>
             </div>
             <div class="mt-5">
-                <div class="mx-5">
+                <div class="mx-5 hidden">
                     <h2 class="text-center line-across pb-3"><span>What is PupSupport</span></h2>
                 </div>
-                <p>Our dedicated team of five coders collaborated with PupSupport to create an innovative and user-friendly website to break the barriers that college students face with their mental health. Their goal is to ultimately help the UW community sustain and develop healthy mental health skills.</p>
-                <ul>
-                    <li>Interactive Website Design</li>
-                    <li>Feedback and Questions Form</li>
-                    <li>Embedded Spotify Podcasts</li>
-                </ul>
-                <div class="d-flex flex-column">
-                    <a href="https://github.com/webimpactuw/PupSupport-Coding" target="_blank" class="scribble-btn">
-                        <div class="button__line"></div>
-                        <div class="button__line"></div>
-                        <span class="button__text"><ion-icon name="logo-github"></ion-icon>&#160;&#160;Here's the Github Repo</span>
-                        <div class="button__drow1"></div>
-                        <div class="button__drow2"></div>
-                    </a>
+                <div class="container text-center">
+                    <p class="hidden">PupSupport is a community-driven initiative that utilizes art and design to promote mental health awareness and equip college students with essential skills for sustaining and improving their mental well-being. But they also needed a website. So our dedicated team of three designers and six coders collaborated with PupSupport to create an innovative and user-friendly website to break the barriers that college students face with their mental health. Over the course of two quarters in the 2022 - 2023 school year, we designed and implemented a website with:</p>
+                    <div class="d-flex flex-row justify-content-around my-4">
+                        <div class="row-3 pup-functions hidden">Interactive Website Design</div>
+                        <div class="row-3 pup-functions hidden">Embedded Spotify Podcasts</div>
+                        <div class="row-3 pup-functions hidden">Feedback and Questions Form</div>
+                        <div class="row-3 pup-functions hidden">Javascript Powered Functions</div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-5 hidden">
+                        <a href="https://webimpactuw.github.io/PupSupport-Coding/" target="_blank" class="text-decoration-none"><button class="pup-link-btn"><p class="pup-link">Check out the website here</p></button></a>
+                    </div>
+                    
                 </div>
-                <h2 class="mt-3">SKILLS & TOOLS USED: HTML/CSS, Javascript, React.js, Figma</h2>
             </div>
             <div class="mt-5">
-                <div class="mx-5">
-                    <h2 class="text-center line-across pb-3"><span>How it began</span></h2>
+                <div class="mx-5 hidden">
+                    <h2 class="text-center line-across pb-3 "><span>How it began</span></h2>
                 </div>
-                <p>As part of the Dubvelopers Club (now Web Impact)...</p>
+                <div class="container text-center hidden">
+                    <p>Web Impact (formerly known as Dubvelopers) is a University of Washington RSO/club. With Web Impact, I had the opportunity to work with others to create a website for underrepresented clients who service local communities or businesses. Throughout the fall quarter, I attended both design and coding workshops to sharpen my skills, as I hoped to land a position on one of the teams. As the end of fall quarter approached we were tasked with creating a personal project as part of our application. I decided to create something that was useful to me at home, while still showcasing my HTML/CSS and especially JavaScript skills, a chess timer to make my games with my younger brother faster and more exciting (<a href="https://github.com/kaiden-ong/Chess-Timer" target="_blank" class="chess-link">click here for the Github repository</a>).  I worked on this project tirelessly, both designing and coding, throughout winter break, but it was all worth it when I was accepted onto a team!</p>
+                </div>
+                
             </div>
             
             
 
             <div class="my-5">
-                <div class="mx-5">
+                <div class="mx-5 hidden">
                     <h2 class="text-center mb-5 line-across"><span>Timeline</span></h2>
                 </div>
                 <div class="d-flex flex-column timeline-container">
-                    <img src="../img/pupsupport-code.gif" alt="pupsupport about page website" class="timeline-img1">
-                    <div class="timeline-block block1">
-                        <h3>Picking a Client</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque molestiae error exercitationem? Voluptate obcaecati voluptas praesentium maxime nobis expedita fugiat alias iusto suscipit pariatur error, mollitia quia? Culpa, reiciendis sequi.</p>
-                    </div>
-                    <div class="timeline-block block2">
-                        <h3>Design Team</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sequi fugit, error aspernatur, voluptates illo consectetur vitae facilis molestias adipisci alias explicabo quibusdam velit dolor assumenda culpa deleniti optio quisquam?</p>
-                    </div>
-                    <div class="timeline-block block3">
-                        <h3>Coding Team</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore rem eum expedita iure eaque magnam ducimus. Quam ab qui deleniti delectus debitis cupiditate, quo omnis dolorem ducimus fuga placeat perspiciatis?</p>
-                    </div>
-                    <div class="timeline-block block4">
-                        <h3>Presentation</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis nulla, molestias fuga excepturi sunt cumque repellendus culpa blanditiis vitae autem quisquam fugiat expedita cum rerum? Accusamus aspernatur vitae quidem aliquid.</p>
+                    <!-- <img src="../img/pupsupport-code.gif" alt="pupsupport about page website" class="timeline-img1"> -->
+                    
+                    <div>
+                        <div class="timeline-block block1 hidden">
+                            <h3 class="fw-bold">① Picking a Client (end of year 2022)</h3>
+                            <p>Out of 8 clients, including local businesses and UW communities/clubs, I applied to join PupSupport as their focus on student mental health and creating an interactive platform captivated me.</p>
+                        </div>
+                        <div class="timeline-block block2 hidden">
+                            <h3 class="fw-bold">② Design Team (winter quarter 2023)</h3>
+                            <p>So first up was the design team. Given direction and guidance from our clients, a team of 4 UI/UX designers began well... designing. After a quarter of hard work, they had a full high-fidelity prototype on Figma.</p>
+                        </div>
+                        <div class="timeline-block block3 hidden">
+                            <h3 class="fw-bold">③ Coding Team (spring quarter 2023)</h3>
+                            <p>The design team handed over the hi-fi prototype and our coding team began implementing it. We decided on making a react app, dividing up different pages and functionalities between our 6 coders.</p>
+                        </div>
+                        <div class="timeline-block block4 hidden">
+                            <h3 class="fw-bold">④ Presentation (end of May 2023)</h3>
+                            <p>Finally, the end of year celebration arrived. This was our time to showcase what we had build. Along with the coding team, we shared our design and website to other club members as well as all the other clients.</p>
+                        </div>
                     </div>
                     
-                    <img src="../img/pupsupport-figma.png" alt="PupSupport's Figma Prototyping" class="timeline-img2">
+                    <!-- <img src="../img/pupsupport-figma.png" alt="PupSupport's Figma Prototyping" class="timeline-img2"> -->
                 </div>
             </div>
-            <div class="mt-5">
-                <div class="mx-5">
-                    <h2 class="text-center line-across pb-3"><span>Putting It All Together</span></h2>
+
+            <div class="my-5">
+                <div class="mx-5 hidden">
+                    <h2 class="text-center line-across pb-5"><span>Putting It All Together</span></h2>
                 </div>
-                <p>At the end of the year, we presented our websites to all clients as well as other members of Dubvelopers. While there are some accessibility issues that were not address, we hope to see this design out on PupSupport's real website soon!</p>
+
+
+                
+                <div class="d-flex flex-row container">
+                    <div class="col-5 d-flex align-items-center put-together hidden me-5">
+                        <div class="d-flex flex-column put-together">
+                            <p>At the end of the year, we celebrated our hard work with a PIZZA PARTY 🍕! Oh... and we also presented our websites to all the clients as well as other members of Dubvelopers. Overall, our team worked hard throughout the spring quarter to deliver this website on time, meeting weekly and messaging each other frequently to keep up with deadlines. While there are some accessibility issues that were not address, we hope to see this design out on PupSupport's real website soon!</p>
+                            <div class="d-flex flex-column">
+                                <a href="https://github.com/webimpactuw/PupSupport-Coding" target="_blank" class="scribble-btn">
+                                    <div class="button__line"></div>
+                                    <div class="button__line"></div>
+                                    <span class="button__text"><ion-icon name="logo-github"></ion-icon>&#160;&#160;Here's the Github Repo</span>
+                                    <div class="button__drow1"></div>
+                                    <div class="button__drow2"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7 put-together hidden">
+                        <img src="../img/pupsupport-code.gif" alt="pupsupport about page website" class="pupsupport-website">
+                    </div>
+                </div>
+                <div class="hidden text-center mt-5">
+                    <h2>SKILLS & TOOLS USED: HTML/CSS, Javascript, React.js, Figma</h2>
+                </div> 
             </div>
         </main>
-        <div class="footer-basic">
+        <div class="footer-basic hidden">
             <footer>
                 <h1 class="text-center pb-3 connect">Connect With Me!</h1>
                 <div class="social">
                     <!-- <a href="#"><ion-icon name="logo-facebook"></ion-icon></a> -->
                     <a href="https://www.linkedin.com/in/kaiden-ong/" target="_blank"><ion-icon name="logo-linkedin" class="linkedin"></ion-icon></a>
-                    <a href="https://github.com/kaiden-ong" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
-                    <a href="Javascript:void(0);" onclick="openForm()"><ion-icon name="mail-outline"></ion-icon></a>
+                    <a href="https://github.com/kaiden-ong" target="_blank"><ion-icon name="logo-github"></a>
+                    <a href="Javascript:void(0);" onclick="openForm()"><ion-icon name="mail-outline"></a>
                 </div>
                 <div class="form-bg" style="display: none;">
                     
@@ -157,7 +187,7 @@
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="email"><b>Message</b></label>
-                                    <span class="textarea form-input" role="textbox" col="40" row="20" contenteditable></span>
+                                    <textarea class="form-input" id="textarea" name="message" rows="1" required></textarea>
                                 </div>
                             </div>
                         </div>
@@ -167,5 +197,5 @@
             </footer>
         </div>
     </body>
-    <script src="../js/app.js"></script>
+    <script defer src="../js/app.js"></script>
 </html>
