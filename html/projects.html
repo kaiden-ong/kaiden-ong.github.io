@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Kaiden Ong</title>
         <link rel="stylesheet" href="../css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
@@ -43,14 +46,14 @@
                         <div class="card col-6">
                             <img src="../img/backgammon3.jpg" class="card-img-top project-card" alt="backgammon board">
                             <span class="imgtext">
-                                <h1>Backgammon AI Agent</h1>
+                                <h1 class="fw-bold">Backgammon AI Agent</h1>
                                 <p><a href="backgammon.html">Click here to learn more →</a></p>
                             </span>
                         </div>
                         <div class="card col-6">
                             <img src="../img/pupsupport3.jpg" class="card-img-top project-card" alt="pupsupport design and coding team with clients">
                             <span class="imgtext">
-                                <h1>PupSupport Website</h1>
+                                <h1 class="fw-bold">PupSupport Website</h1>
                                 <p><a href="pupsupport.html">Click here to learn more →</a></p>
                             </span>
                         </div>
@@ -59,14 +62,14 @@
                         <div class="card col-6">
                             <img src="../img/vienna3.jpg" class="card-img-top project-card" alt="My Vienna team at Semantic Web Company">
                             <span class="imgtext">
-                                <h1>SWC Internship Project</h1>
+                                <h1 class="fw-bold">SWC Internship Project</h1>
                                 <p><a href="vienna.html">Click here to learn more →</a></p>
                             </span>
                         </div>
                         <div class="card col-6">
                             <img src="../img/covid4.jpg" class="card-img-top project-card" alt="Covid-19 Vaccine Scheduler">
                             <span class="imgtext">
-                                <h1>Covid-19 Vaccine Scheduler</h1>
+                                <h1 class="fw-bold">Covid-19 Vaccine Scheduler</h1>
                                 <p><a href="scheduler.html">Click here to learn more →</a></p>
                             </span>
                         </div>
@@ -97,26 +100,27 @@
                             </div>
                             <div class="col-4 pe-4">
                                 <div class="form-group">
-                                    <label for="email"><b>First Name</b></label>
+                                    <label for="email"><strong>First Name <span class="text-danger">*</span></strong></label>
                                     <input class="form-input" type="text" name="first-name" required>
                                 </div>
                             </div>
                             <div class="col-4 px-2">
                                 <div class="form-group">
-                                    <label for="email"><b>Last Name</b></label>
+                                    <label for="email"><strong>Last Name</strong></label>
                                     <input class="form-input" type="text" name="last-name">
                                 </div>
                             </div>
                             <div class="col-4 ps-4">
                                 <div class="form-group">
-                                    <label for="email"><b>Email</b></label>
+                                    <label for="email"><strong>Email <span class="text-danger">*</span></strong></label>
                                     <input class="form-input" type="text" name="email" required>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="form-group">
-                                    <label for="email"><b>Message</b></label>
-                                    <span class="textarea form-input" role="textbox" contenteditable></span>
+                                <div class="form-group text-area">
+                                    <label for="email"><strong>Message <span class="text-danger">*</span></strong></label>
+                                    <textarea class="form-input" id="textarea" name="message" rows="1" required></textarea>
+                                    <p class="pt-3"><strong><span class="text-danger">*</span> required</strong></p>
                                 </div>
                             </div>
                         </div>
