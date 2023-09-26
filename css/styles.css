@@ -1107,8 +1107,10 @@ nav {
 
 .backBtn {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 0%;
+  transform: translate(-0%, -0%);
+  -ms-transform: translate(-0%, -0%);
   margin: 1rem;
   padding: 12px 24px;
   border-radius: 25px;
