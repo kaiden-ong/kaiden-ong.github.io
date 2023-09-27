@@ -1026,13 +1026,54 @@ nav {
   transform: translateY(0);
 }
 
-/* PupSupport Project Page */
+/* All Project Project Pages (Started as only pupsupport but eventually used on all projects pgs) */
 .pupsupport-main p {
   font-size: x-large;
 }
 
 .pupsupport-main li {
   font-size: larger;
+}
+
+.backgammon-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/backgammon2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: saturate(150%);
+  height: 70vh;
+  width: 100%;
+}
+
+/* other background images */
+
+.vaccine-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/covid5.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: saturate(150%);
+  height: 70vh;
+  width: 100%;
+}
+
+.vienna-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/agriculture.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: saturate(150%);
+  height: 70vh;
+  width: 100%;
 }
 
 .pup-head {
@@ -1048,6 +1089,7 @@ nav {
   width: 100%;
 }
 
+/* back to common styling */
 .pup-content {
   position: relative;
   display: flex;
