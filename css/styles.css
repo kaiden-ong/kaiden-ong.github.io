@@ -1326,6 +1326,18 @@ nav {
     height: 50vh;
   }
 
+  .vienna-head {
+    height: 50vh;
+  }
+
+  .backgammon-head {
+    height: 50vh;
+  }
+
+  .vaccine-head {
+    height: 50vh;
+  }
+
   .block1 {
     left: 0%;
     width: 100%;
@@ -1364,6 +1376,18 @@ nav {
   }
 
   .pup-head {
+    height: 40vh;
+  }
+
+  .vienna-head {
+    height: 40vh;
+  }
+
+  .backgammon-head {
+    height: 40vh;
+  }
+
+  .vaccine-head {
     height: 40vh;
   }
 
