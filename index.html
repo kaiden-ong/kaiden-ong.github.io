@@ -41,15 +41,57 @@
         <div class="spacer2 waves-nav"></div>
 
         <main class="indexmain">
-            <div class="d-flex flex-row justify-content-between photo-desc">
-                <div class="col-4">
-                    <img src="img/photo6.png" alt="Kaiden Ong" class="img-fluid">
+            <div class="photo-desc gap-lg-5 gap-4">
+                <div class="col-12 col-md-5 col-xl-4 align-center">
+                    <img src="img/photo7.png" alt="Kaiden Ong" class="img-fluid headshot">
+                    <img src="img/photo8.jpg" alt="Kaiden Ong" class="img-fluid horizontal-headshot rounded">
                 </div>
-                <div class="col-8 my-auto">
+                <div class="col-sm-12 col-md-7 col-xl-8 my-auto">
                     <h1 class="hello-world">// HELLO WORLD!</h1>
                     <h2 class="quick-desc">I'm Kaiden Ong, an aspiring software developer at the University of Washington. Passionate about coding, innovation, and accessibility, I'm all about turning ideas into reality. Let's build something incredible together!</h2>
                     
                 </div>
+            </div>
+            <div class="form-bg" style="display: none; position: fixed;">
+                    
+            </div>
+            <div class="form-popup p-5" id="myForm">
+                <form class="form-container" action="https://getform.io/f/2fbc8979-8bb8-4f6d-a01c-f6e74c72a149" method="POST" autocomplete="off">
+                    <div class="d-flex flex-row flex-wrap justify-content-between">
+                        <div class="col-10">
+                            <h1 class="pb-3">Message Me!</h1>
+                        </div>
+                        <div class="col-1">
+                            <button type="button" class="btn cancel" onclick="closeForm()"><img src="img/close.png"></button>
+                        </div>
+                        <div class="col-4 pe-4">
+                            <div class="form-group">
+                                <label for="email"><strong>First Name <span class="text-danger">*</span></strong></label>
+                                <input class="form-input" type="text" name="first-name" required>
+                            </div>
+                        </div>
+                        <div class="col-4 px-2">
+                            <div class="form-group">
+                                <label for="email"><strong>Last Name</strong></label>
+                                <input class="form-input" type="text" name="last-name">
+                            </div>
+                        </div>
+                        <div class="col-4 ps-4">
+                            <div class="form-group">
+                                <label for="email"><strong>Email <span class="text-danger">*</span></strong></label>
+                                <input class="form-input" type="text" name="email" required>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group text-area">
+                                <label for="email"><strong>Message <span class="text-danger">*</span></strong></label>
+                                <textarea class="form-input" id="textarea" name="message" rows="1" required></textarea>
+                                <p class="pt-3"><strong><span class="text-danger">*</span> required</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn send-btn">Send</button>
+                </form>
             </div>
         </main>
 
@@ -61,46 +103,6 @@
                     <a href="https://www.linkedin.com/in/kaiden-ong/" target="_blank"><ion-icon name="logo-linkedin" class="linkedin"></ion-icon></a>
                     <a href="https://github.com/kaiden-ong" target="_blank"><ion-icon name="logo-github"></a>
                     <a href="Javascript:void(0);" onclick="openForm()"><ion-icon name="mail-outline"></a>
-                </div>
-                <div class="form-bg" style="display: none;">
-                </div>
-                <div class="form-popup p-5" id="myForm">
-                    <form class="form-container" action="https://getform.io/f/2fbc8979-8bb8-4f6d-a01c-f6e74c72a149" method="POST" autocomplete="off">
-                        <div class="d-flex flex-row flex-wrap justify-content-between">
-                            <div class="col-10">
-                                <h1 class="pb-3">Message Me!</h1>
-                            </div>
-                            <div class="col-1">
-                                <button type="button" class="btn cancel" onclick="closeForm()"><img src="img/close.png"></button>
-                            </div>
-                            <div class="col-4 pe-4">
-                                <div class="form-group">
-                                    <label for="email"><strong>First Name <span class="text-danger">*</span></strong></label>
-                                    <input class="form-input" type="text" name="first-name" required>
-                                </div>
-                            </div>
-                            <div class="col-4 px-2">
-                                <div class="form-group">
-                                    <label for="email"><strong>Last Name</strong></label>
-                                    <input class="form-input" type="text" name="last-name">
-                                </div>
-                            </div>
-                            <div class="col-4 ps-4">
-                                <div class="form-group">
-                                    <label for="email"><strong>Email <span class="text-danger">*</span></strong></label>
-                                    <input class="form-input" type="text" name="email" required>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group text-area">
-                                    <label for="email"><strong>Message <span class="text-danger">*</span></strong></label>
-                                    <textarea class="form-input" id="textarea" name="message" rows="1" required></textarea>
-                                    <p class="pt-3"><strong><span class="text-danger">*</span> required</strong></p>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn send-btn">Send</button>
-                    </form>
                 </div>
             </footer>
         </div>
