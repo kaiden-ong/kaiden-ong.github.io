@@ -164,6 +164,16 @@ nav {
   color: #000000;
 }
 
+.proj-heading-sm {
+  max-width: 100%;
+  text-align: center;
+  margin-top: 3rem;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #000000;
+  display: none;
+}
+
 .proj-container {
   padding: 1.5rem 0;
 }
@@ -347,8 +357,9 @@ nav {
 }
 
 .hobby-card {
-  height: 19rem;
-  width: 20rem;
+  aspect-ratio: 1.5/1;
+  /* height: 19rem;
+  width: 20rem; */
   perspective: 800px;
   padding: 0 1rem 0 1rem;
 }
@@ -1530,7 +1541,7 @@ nav {
   }
 
   .proj-heading {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
   }
 
   .line-across > span:before, .line-across > span:after {
@@ -1547,6 +1558,15 @@ nav {
     height: 60px;
     max-height: 60px;
     width: auto;
+  }
+
+
+  .proj-heading {
+    display: none;
+    font-size: 1.75rem;
+  }
+  .proj-heading-sm {
+    display: block;
   }
 
   .pup-title {
