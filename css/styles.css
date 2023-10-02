@@ -164,8 +164,22 @@ nav {
   color: #000000;
 }
 
+.proj-container {
+  padding: 1.5rem 0;
+}
+
 .sm-proj-learn {
   display: none;
+}
+
+.proj-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.proj-row {
+  display: flex;
+  flex-direction: row;
 }
 
 .card img {
@@ -1331,10 +1345,6 @@ nav {
 }
 
 @media (max-width: 1399px) {
-  .proj-heading {
-    font-size: 2.5rem;
-  }
-
   .pup-head {
     height: 50vh;
   }
@@ -1381,7 +1391,7 @@ nav {
 
 @media (max-width: 1199px) {
   .proj-heading {
-    font-size: 2.25rem;
+    font-size: 3rem;
   }
 
   .pup-title {
@@ -1425,8 +1435,25 @@ nav {
 }
 
 @media (max-width: 991px) {
+  .image-container img {
+    height: 75px;
+    max-height: 75px;
+    width: auto;
+  }
+
   .proj-heading {
-    font-size: 2rem;
+    font-size: 2.5rem;
+  }
+
+  .proj-row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .timeline-block {
+    border-radius: 30px;
   }
 
   .imgtext h1 {
@@ -1479,6 +1506,10 @@ nav {
     max-width: 100% !important;
   }
 
+  .proj-container {
+    padding: 1rem !important;
+  }
+
   .pup-skills {
     font-size: larger;
     padding: 0 2rem;
@@ -1498,6 +1529,10 @@ nav {
     font-size: 2.5rem;
   }
 
+  .proj-heading {
+    font-size: 1.75rem;
+  }
+
   .line-across > span:before, .line-across > span:after {
     width: 0vw;
    }
@@ -1508,6 +1543,12 @@ nav {
 }
 
 @media (max-width: 575px) {
+  .image-container img {
+    height: 60px;
+    max-height: 60px;
+    width: auto;
+  }
+
   .pup-title {
     font-size: 2.75rem;
   }
@@ -1560,6 +1601,12 @@ nav {
 @media (max-width: 424px) {
   .nav-link {
     font-size: large !important;
+  }
+
+  .proj-heading {
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+    margin-top: 2rem;
   }
 
   .pup-title {
