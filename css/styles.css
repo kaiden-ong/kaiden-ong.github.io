@@ -321,10 +321,15 @@ nav {
   display: flex;
   flex-direction: row;
   padding: 5rem 0 5rem 0;
+  align-items: center;
 }
 
 .intro {
   background-color: #bad4e4;
+}
+
+.who-am-i {
+  margin: 0 3rem;
 }
 
 .who-am-i h2 {
@@ -338,22 +343,22 @@ nav {
   font-size: 1.5rem;
 }
 
+.about-heads {
+  font-size: 2.75rem;
+  font-weight: bold;
+}
+
 .uw {
   width: 100%;
   height: auto;
-}
-
-.uw-hz {
-  display: none;
 }
 
 .passion-learning {
   background-color: #e1eaf3;
 }
 
-.passion-learning h2 {
-  font-size: 2.75rem;
-  font-weight: bold;
+.tabs-sm {
+  display: none;
 }
 
 .about-enjoy {
@@ -361,21 +366,23 @@ nav {
   margin: 0 2rem 0 2rem;
 }
 
-.about-enjoy h2 {
-  font-size: 2.75rem;
-  font-weight: bold;
-}
-
 .about-enjoy p {
   margin-bottom: 0;
 }
 
+.hobby-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .hobby-card {
-  aspect-ratio: 1.5/1;
-  /* height: 19rem;
-  width: 20rem; */
+  aspect-ratio: 4/3;
   perspective: 800px;
-  padding: 0 1rem 0 1rem;
+  padding: 1rem;
 }
 
 .card-inner {
@@ -662,9 +669,9 @@ nav {
   position: relative;
   background: white;
   padding: 40px;
-  padding-bottom: 80px;
-  width: 70%;
-  height: 350px;
+  padding-bottom: 40px;
+  width: 80%;
+  height: auto;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   border-radius: 15px;
   min-width: 240px;
@@ -1369,9 +1376,19 @@ nav {
   transition-delay: 100ms;
 }
 
+@media (min-width: 1900px) {
+  .tabs {
+    width: 60%;
+  }
+}
+
 @media (max-width: 1399px) {
   .indexmain {
     padding: 5% 10%;
+  }
+
+  .hobby-img {
+    border-radius: 10px;
   }
 
   .pup-head {
@@ -1495,6 +1512,22 @@ nav {
     font-size: 2.6rem;
   }
 
+  .informatics {
+    padding: 2rem 0;
+  }
+
+  .who-am-i h2 {
+    font-size: 2rem;
+  }
+
+  .about-heads {
+    font-size: 1.9rem;
+  }
+
+  .tabs {
+    padding-top: .5rem;
+  }
+
   .image-container img {
     height: 75px;
     max-height: 75px;
@@ -1514,10 +1547,6 @@ nav {
 
   .timeline-block {
     border-radius: 30px;
-  }
-
-  .imgtext h1 {
-    font-size: 1.25rem;
   }
 
   .proj-learn {
@@ -1545,6 +1574,14 @@ nav {
 }
 
 @media (max-width: 767px) {
+  .who-am-i h2 {
+    font-size: 2.25rem;
+  }
+
+  .who-am-i h2 {
+    font-size: 1.75rem;
+  }
+
   .photo-desc {
     flex-direction: column;
     justify-content: center;
@@ -1602,6 +1639,27 @@ nav {
 }
 
 @media (max-width: 700px) {
+  .who-am-i h2 {
+    font-size: 1.6rem;
+  }
+
+  .tabs {
+    display: none;
+  }
+
+  .tabs-sm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tabs-sm h3 {
+    font-size: 1.25rem !important;
+  }
+  
+  .tabs-sm {
+    font-size: .75rem !important;
+  }
+
   .line-across {
     font-size: 2.5rem;
   }
@@ -1620,6 +1678,14 @@ nav {
 }
 
 @media (max-width: 575px) {
+  .who-am-i {
+    margin: 0 1rem;
+  }
+
+  .who-am-i p {
+    font-size: 1rem;
+  }
+
   .indexmain {
     padding: 1rem;
   }
@@ -1691,6 +1757,10 @@ nav {
 }
 
 @media (max-width: 424px) {
+  .who-am-i h2 {
+    font-size: 1.5rem;
+  }
+
   .nav-link {
     font-size: large !important;
   }
@@ -1723,7 +1793,7 @@ nav {
   }
 
   .timeline-block {
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem .5rem 1.5rem;
   }
 
   .button__drow1,
