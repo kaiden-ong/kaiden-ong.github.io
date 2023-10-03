@@ -290,7 +290,7 @@ nav {
   background-position: center;
   background-size: cover;
   filter: saturate(150%);
-  height: 70vh;
+  height: 35rem;
 }
 
 .about-content {
@@ -377,6 +377,7 @@ nav {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 1rem;
 }
 
 .hobby-card {
@@ -1435,22 +1436,29 @@ nav {
    }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
   .hello-world {
     font-size: 3.4rem;
   }
 
-  .uw {
-    display: none;
+  .about-head {
+    height: 25rem;
   }
 
-  .uw-hz {
-    display: inline;
-    width: 100%;
+  .about-title {
+    font-size: 5rem;
+  }
+
+  .about-subtitle {
+    font-size: 2.5rem;
   }
 
   .informatics {
     flex-direction: column;
+  }
+
+  .uw {
+    display: none;
   }
 
   .who-am-i h2, p{
@@ -1574,6 +1582,18 @@ nav {
 }
 
 @media (max-width: 767px) {
+  .about-head {
+    height: 20rem;
+  }
+
+  .about-title {
+    font-size: 4rem;
+  }
+
+  .about-subtitle {
+    font-size: 2rem;
+  }
+
   .who-am-i h2 {
     font-size: 2.25rem;
   }
@@ -1678,6 +1698,17 @@ nav {
 }
 
 @media (max-width: 575px) {
+  .about-head {
+    height: 15rem;
+  }
+
+  .about-title {
+    font-size: 3rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.75rem;
+  }
   .who-am-i {
     margin: 0 1rem;
   }
@@ -1697,6 +1728,10 @@ nav {
   .quick-desc {
     padding: 1rem;
     font-size: 1.15rem;
+  }
+
+  .hobby-container {
+    padding: 0;
   }
 
   .proj-heading {
