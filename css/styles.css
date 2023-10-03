@@ -343,7 +343,7 @@ nav {
   font-size: 1.5rem;
 }
 
-.about-heads {
+.about-head {
   font-size: 2.75rem;
   font-weight: bold;
 }
@@ -1101,6 +1101,7 @@ nav {
   font-size: larger;
 }
 
+/* other background images */
 .backgammon-head {
   display: flex;
   justify-content: center;
@@ -1110,11 +1111,9 @@ nav {
   background-position: center;
   background-size: cover;
   filter: saturate(150%);
-  height: 70vh;
+  height: 35rem;
   width: 100%;
 }
-
-/* other background images */
 
 .vaccine-head {
   display: flex;
@@ -1125,7 +1124,7 @@ nav {
   background-position: center;
   background-size: cover;
   filter: saturate(150%);
-  height: 70vh;
+  height: 35rem;
   width: 100%;
 }
 
@@ -1138,7 +1137,7 @@ nav {
   background-position: center;
   background-size: cover;
   filter: saturate(150%);
-  height: 70vh;
+  height: 35rem;
   width: 100%;
 }
 
@@ -1151,7 +1150,7 @@ nav {
   background-position: center;
   background-size: cover;
   filter: saturate(150%);
-  height: 70vh;
+  height: 35rem;
   width: 100%;
 }
 
@@ -1432,23 +1431,6 @@ nav {
     font-size: 1.75rem;
   }
 
-
-  .pup-head {
-    height: 50vh;
-  }
-
-  .vienna-head {
-    height: 50vh;
-  }
-
-  .backgammon-head {
-    height: 50vh;
-  }
-
-  .vaccine-head {
-    height: 50vh;
-  }
-
   .block1 {
     left: 0%;
     width: 100%;
@@ -1483,6 +1465,22 @@ nav {
   }
 
   .about-head {
+    height: 25rem;
+  }
+  
+  .pup-head {
+    height: 25rem;
+  }
+
+  .vienna-head {
+    height: 25rem;
+  }
+
+  .backgammon-head {
+    height: 25rem;
+  }
+
+  .vaccine-head {
     height: 25rem;
   }
 
@@ -1585,7 +1583,7 @@ nav {
     font-size: 2rem;
   }
 
-  .about-heads {
+  .about-head {
     font-size: 1.9rem;
   }
 
@@ -1642,6 +1640,22 @@ nav {
   .about-head {
     height: 20rem;
   }
+  
+  .pup-head {
+    height: 20rem;
+  }
+
+  .vienna-head {
+    height: 20rem;
+  }
+
+  .backgammon-head {
+    height: 20rem;
+  }
+
+  .vaccine-head {
+    height: 20rem;
+  }
 
   .about-title {
     font-size: 4rem;
@@ -1652,7 +1666,15 @@ nav {
   }
 
   .hobby-container {
-    padding: 1.5rem;
+    padding: 2rem;
+  }
+
+  .card-back h2 {
+    font-size: 2.75rem;
+  }
+  
+  .card-back p {
+    font-size: 2.25rem;
   }
 
   .who-am-i h2 {
@@ -1720,6 +1742,14 @@ nav {
 }
 
 @media (max-width: 700px) {
+  .card-back h2 {
+    font-size: 2.25rem;
+  }
+  
+  .card-back p {
+    font-size: 1.7rem;
+  }
+
   .who-am-i h2 {
     font-size: 1.6rem;
   }
@@ -1763,6 +1793,22 @@ nav {
     height: 15rem;
   }
 
+  .pup-head {
+    height: 15rem;
+  }
+
+  .vienna-head {
+    height: 15rem;
+  }
+
+  .backgammon-head {
+    height: 15rem;
+  }
+
+  .vaccine-head {
+    height: 15rem;
+  }
+
   .about-title {
     font-size: 3rem;
   }
@@ -1770,6 +1816,15 @@ nav {
   .about-subtitle {
     font-size: 1.75rem;
   }
+
+  .card-back h2 {
+    font-size: 1.75rem;
+  }
+  
+  .card-back p {
+    font-size: 1.3rem;
+  }
+
   .who-am-i {
     margin: 0 1rem;
   }
@@ -1855,6 +1910,18 @@ nav {
 @media (max-width: 424px) {
   .who-am-i h2 {
     font-size: 1.5rem;
+  }
+
+  .card-back {
+    padding: .5rem;
+  }
+  
+  .card-back h2 {
+    font-size: 1.25rem;
+  }
+  
+  .card-back p {
+    font-size: .9rem;
   }
 
   .nav-link {
