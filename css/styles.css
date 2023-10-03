@@ -417,9 +417,19 @@ nav {
 .card-back {
   transform: rotateY(180deg);
   background-color: #07689F;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 15px;
   text-align: center;
+}
+
+.card-back h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-back p {
+  font-size: 1.15rem;
 }
 
 .card-content {
@@ -1377,7 +1387,25 @@ nav {
   transition-delay: 100ms;
 }
 
+@media (min-width: 2300px) {
+  .card-back h2 {
+    font-size: 2.5rem;
+  }
+  
+  .card-back p {
+    font-size: 2rem;
+  }
+}
+
 @media (min-width: 1900px) {
+  .card-back h2 {
+    font-size: 2.25rem;
+  }
+  
+  .card-back p {
+    font-size: 1.65rem;
+  }
+
   .tabs {
     width: 60%;
   }
@@ -1391,6 +1419,19 @@ nav {
   .hobby-img {
     border-radius: 10px;
   }
+
+  .hobby-container {
+    padding: 1rem 5rem;
+  }
+
+  .card-back h2 {
+    font-size: 2.25rem;
+  }
+  
+  .card-back p {
+    font-size: 1.75rem;
+  }
+
 
   .pup-head {
     height: 50vh;
@@ -1436,7 +1477,7 @@ nav {
    }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .hello-world {
     font-size: 3.4rem;
   }
@@ -1451,6 +1492,14 @@ nav {
 
   .about-subtitle {
     font-size: 2.5rem;
+  }
+
+  .card-back h2 {
+    font-size: 2rem;
+  }
+  
+  .card-back p {
+    font-size: 1.4rem;
   }
 
   .informatics {
@@ -1518,6 +1567,14 @@ nav {
 @media (max-width: 991px) {
   .hello-world {
     font-size: 2.6rem;
+  }
+  
+  .card-back p {
+    font-size: 1.25rem;
+  }
+
+  .hobby-container {
+    padding: 0;
   }
 
   .informatics {
@@ -1592,6 +1649,10 @@ nav {
 
   .about-subtitle {
     font-size: 2rem;
+  }
+
+  .hobby-container {
+    padding: 1.5rem;
   }
 
   .who-am-i h2 {
