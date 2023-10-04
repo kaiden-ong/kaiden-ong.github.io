@@ -426,15 +426,15 @@ nav {
   font-size: 1.75rem;
   font-weight: bold;
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-back p {
-  font-size: 1.15rem;
-}
-
-.card-content {
-  width: 100%;
-  height: 100%;
+  font-size: 1vw;
+  white-space: pre-wrap;
+  overflow: hidden;
 }
 
 /* resume button */
@@ -1390,19 +1390,12 @@ nav {
   .card-back h2 {
     font-size: 2.5rem;
   }
-  
-  .card-back p {
-    font-size: 2rem;
-  }
+
 }
 
 @media (min-width: 1900px) {
   .card-back h2 {
     font-size: 2.25rem;
-  }
-  
-  .card-back p {
-    font-size: 1.65rem;
   }
 
   .tabs {
@@ -1428,7 +1421,7 @@ nav {
   }
   
   .card-back p {
-    font-size: 1.75rem;
+    font-size: 2.25vw;
   }
 
   .block1 {
@@ -1494,10 +1487,6 @@ nav {
 
   .card-back h2 {
     font-size: 2rem;
-  }
-  
-  .card-back p {
-    font-size: 1.4rem;
   }
 
   .informatics {
@@ -1565,10 +1554,6 @@ nav {
 @media (max-width: 991px) {
   .hello-world {
     font-size: 2.6rem;
-  }
-  
-  .card-back p {
-    font-size: 1.25rem;
   }
 
   .hobby-container {
@@ -1674,7 +1659,7 @@ nav {
   }
   
   .card-back p {
-    font-size: 2.25rem;
+    font-size: 4vw;
   }
 
   .who-am-i h2 {
@@ -1744,10 +1729,6 @@ nav {
 @media (max-width: 700px) {
   .card-back h2 {
     font-size: 2.25rem;
-  }
-  
-  .card-back p {
-    font-size: 1.7rem;
   }
 
   .who-am-i h2 {
@@ -1819,10 +1800,6 @@ nav {
 
   .card-back h2 {
     font-size: 1.75rem;
-  }
-  
-  .card-back p {
-    font-size: 1.3rem;
   }
 
   .who-am-i {
@@ -1918,10 +1895,6 @@ nav {
   
   .card-back h2 {
     font-size: 1.25rem;
-  }
-  
-  .card-back p {
-    font-size: .9rem;
   }
 
   .nav-link {
