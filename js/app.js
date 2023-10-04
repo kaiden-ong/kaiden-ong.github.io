@@ -18,8 +18,12 @@ function openForm() {
 function closeForm() {
   form_bg.style.display = "none";
   form.style.display = "none";
-  startScroll = aboutPhotoHeight + navbarHeight
-  
+  startScroll = aboutPhotoHeight + navbarHeight;
+  if (document.body.scrollTop > startScroll || document.documentElement.scrollTop > startScroll) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
   resetForm();
   // enableScroll();
 }
