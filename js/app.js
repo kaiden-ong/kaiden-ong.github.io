@@ -11,11 +11,14 @@ function openForm() {
   form_bg.style.display = "block";
   form.style.display = "block";
   // disableScroll();
+  mybutton.style.display = "none";
+  startScroll = Number.MAX_SAFE_INTEGER;
 }
 
 function closeForm() {
   form_bg.style.display = "none";
   form.style.display = "none";
+  startScroll = aboutPhotoHeight + navbarHeight
   
   resetForm();
   // enableScroll();
