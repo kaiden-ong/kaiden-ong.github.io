@@ -84,28 +84,28 @@
             <div class="z-2 form-bg" style="display: none; position: fixed;">
                     
             </div>
-            <div class="z-3 form-popup p-5" id="myForm">
+            <div class="z-3 form-popup" id="myForm">
                 <form class="form-container" action="https://getform.io/f/2fbc8979-8bb8-4f6d-a01c-f6e74c72a149" method="POST" autocomplete="off">
                     <div class="d-flex flex-row flex-wrap justify-content-between">
-                        <div class="col-10">
+                        <div class="col-9 col-sm-10 col-md-11">
                             <h1 class="pb-3">Message Me!</h1>
                         </div>
-                        <div class="col-1">
-                            <button type="button" class="btn cancel" onclick="closeForm()"><img src="../img/close.png"></button>
+                        <div class="col-3 col-sm-1 col-md-1">
+                            <button type="button" class="btn cancel-btn float-end" onclick="closeForm()"><img src="../img/close.png" class="cancel"></button>
                         </div>
-                        <div class="col-4 pe-4">
+                        <div class="col-12 col-sm-6 col-lg-4 form-first">
                             <div class="form-group">
                                 <label for="email"><strong>First Name <span class="text-danger">*</span></strong></label>
                                 <input class="form-input" type="text" name="first-name" required>
                             </div>
                         </div>
-                        <div class="col-4 px-2">
+                        <div class="col-12 col-sm-6 col-lg-4 form-last">
                             <div class="form-group">
                                 <label for="email"><strong>Last Name</strong></label>
                                 <input class="form-input" type="text" name="last-name">
                             </div>
                         </div>
-                        <div class="col-4 ps-4">
+                        <div class="col-12 col-lg-4 form-email">
                             <div class="form-group">
                                 <label for="email"><strong>Email <span class="text-danger">*</span></strong></label>
                                 <input class="form-input" type="text" name="email" required>
@@ -115,7 +115,7 @@
                             <div class="form-group text-area">
                                 <label for="email"><strong>Message <span class="text-danger">*</span></strong></label>
                                 <textarea class="form-input" id="textarea" name="message" rows="1" required></textarea>
-                                <p class="pt-3"><strong><span class="text-danger">*</span> required</strong></p>
+                                <label class="pt-3"><strong><span class="text-danger">*</span> required</strong></label>
                             </div>
                         </div>
                     </div>
