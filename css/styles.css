@@ -1141,6 +1141,19 @@ nav {
   width: 100%;
 }
 
+.heartbeats-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/heartbeats-2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: saturate(150%);
+  height: 35rem;
+  width: 100%;
+}
+
 .vaccine-head {
   display: flex;
   justify-content: center;
@@ -1503,6 +1516,10 @@ nav {
     height: 25rem;
   }
 
+  .heartbeats-head {
+    height: 25rem;
+  }
+
   .vaccine-head {
     height: 25rem;
   }
@@ -1558,6 +1575,10 @@ nav {
   }
 
   .backgammon-head {
+    height: 40vh;
+  }
+  
+  .heartbeats-head {
     height: 40vh;
   }
 
@@ -1677,6 +1698,10 @@ nav {
   }
 
   .backgammon-head {
+    height: 20rem;
+  }
+
+  .heartbeats-head {
     height: 20rem;
   }
 
@@ -1837,6 +1862,10 @@ nav {
   }
 
   .backgammon-head {
+    height: 15rem;
+  }
+
+  .heartbeats-head {
     height: 15rem;
   }
 
