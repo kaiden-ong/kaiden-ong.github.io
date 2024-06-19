@@ -70,7 +70,7 @@
 
 /* navbar */
 nav {
-  font-size: 1.5rem;
+  font-size: 2rem;
   background-color: white;
   border-width: .15rem;
   font-weight: 800;
@@ -182,7 +182,7 @@ nav {
 }
 
 .proj-container {
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 2.5rem 0;
 }
 
 .sm-proj-learn {
@@ -1141,6 +1141,19 @@ nav {
   width: 100%;
 }
 
+.when2eat-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/when2eat-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: saturate(150%);
+  height: 35rem;
+  width: 100%;
+}
+
 .heartbeats-head {
   display: flex;
   justify-content: center;
@@ -1685,6 +1698,10 @@ nav {
 }
 
 @media (max-width: 767px) {
+  nav {
+    font-size: 1.5rem;
+  }
+
   .about-head {
     height: 20rem;
   }
